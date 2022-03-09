@@ -113,7 +113,7 @@ stages:
       displayName: Build
       inputs:
         solution: '$(solution)'
-        msbuildArgs: /p:UseWPP_CopyWebApplication=True /p:PipelineDependsOnBuild=False /p:PublishProfile=ToFileSys.pubxml /p:DeployOnBuild=true /p:AutoParameterizationWebConfigConnectionStrings=False /p:PublishOutDir=$(publishDir) /p:MarkWebConfigAssistFilesAsExclude=false /p:TransformWebConfigEnabled=false
+        msbuildArgs: /p:PipelineDependsOnBuild=False /p:PublishProfile=ToFileSys.pubxml /p:DeployOnBuild=true /p:AutoParameterizationWebConfigConnectionStrings=False /p:PublishOutDir=$(publishDir) /p:MarkWebConfigAssistFilesAsExclude=false /p:TransformWebConfigEnabled=false
         platform: '$(buildPlatform)'
         configuration: '$(buildConfiguration)'
         clean: true
